@@ -15,17 +15,20 @@ namespace CalculatorLab
 
         public double Add(double a, double b)
         {
-            return a + b;
+            Accumulator = a + b;
+            return Accumulator;
         }
 
         public double Subtract(double a, double b)
         {
-            return a - b;
+            Accumulator = a - b;
+            return Accumulator;
         }
 
         public double Multiply(double a, double b)
         {
-            return a * b;
+            Accumulator = a * b;
+            return Accumulator;
         }
 
         public double Power(double x, double exp)
@@ -36,14 +39,17 @@ namespace CalculatorLab
 
             //if (exp > 0) return x * Power(x, exp - 1);
             //else return x / Power(x, exp + 1);
-
-            return Math.Pow(x, exp);
+            Accumulator = Math.Pow(x, exp);
+            return Accumulator;
         }
 
         public double Divide(double a, double b)
         {
             if (b != 0.0)
-                return a / b;
+            {
+                Accumulator = a / b;
+                return Accumulator;
+            }
             else
                 throw new DivisionException(b);
         }
