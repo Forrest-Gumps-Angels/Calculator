@@ -54,6 +54,11 @@ namespace CalculatorLab
 
         }
 
-        public double Accumulator;
+        public double Accumulator
+        {
+            get { return Accumulator; }
+
+            private set { Accumulator = value; }
+        }
     }
 }
