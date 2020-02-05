@@ -100,5 +100,49 @@ namespace CalculatorLab.Test.Unit
             uut.Clear();
             Assert.AreEqual(uut.Accumulator, 0);
         }
+
+        [TestCase(2.0, 3.0, 8.0)]
+        [TestCase(-5.0, -2.0, 0.04)]
+        [TestCase(3.0, -2.0, 0.11111111111)]
+        [TestCase(0, 0, 1)]
+        public void Accumulator_DoPowerOperation_AssertCorrectValue(double a, double b, double expected)
+        {
+            var result = uut.Power(a, b);
+
+            Assert.That(uut.Accumulator, Is.EqualTo((expected)).Within(0.001));
+        }
+
+        [TestCase(5.0, 10.0, 50)]
+        [TestCase(-5.0, -10.0, 50)]
+        [TestCase(5.0, -10.0, -50)]
+        [TestCase(0, 0, 0)]
+        public void Accumulator_DoMultiplyOperation_AssertCorrectValue(double a, double b, double expected)
+        {
+            var result = uut.Multiply(a, b);
+
+            Assert.That(uut.Accumulator, Is.EqualTo((expected)));
+        }
+
+        [TestCase(5.0, 10.0, -5.0)]
+        [TestCase(-5.0, -10.0, 5.0)]
+        [TestCase(5.0, -10.0, 15.0)]
+        [TestCase(0, 0, 0)]
+        public void Accumulator_DoSubtractOperation_AssertCorrectValue(double a, double b, double expected)
+        {
+            var result = uut.Subtract(a, b);
+
+            Assert.That(uut.Accumulator, Is.EqualTo((expected)));
+        }
+
+        [TestCase(5.0, 10.0, 15.0)]
+        [TestCase(-5.0, -10.0, -15.0)]
+        [TestCase(5.0, -10.0, -5.0)]
+        [TestCase(0, 0, 0)]
+        public void Accumulator_DoAddOperation_AssertCorrectValue(double a, double b, double expected)
+        {
+            var result = uut.Add(a, b);
+
+            Assert.That(uut.Accumulator, Is.EqualTo((expected)));
+        }
     }
 }
