@@ -30,14 +30,14 @@ namespace CalculatorLab
 
         public double Power(double x, double exp)
         {
-            if (exp == 1) return x;
-            else if (exp == -1) return x;
-            else if (exp == 0) return 1;
+            //if (exp == 1) return x;
+            //else if (exp == -1) return x;
+            //else if (exp == 0) return 1;
 
-            if (exp > 0) return x * Power(x, exp - 1);
-            else return x / Power(x, exp + 1);
+            //if (exp > 0) return x * Power(x, exp - 1);
+            //else return x / Power(x, exp + 1);
 
-            //return Math.Pow(x, exp);
+            return Math.Pow(x, exp);
         }
 
         public double Divide(double a, double b)
