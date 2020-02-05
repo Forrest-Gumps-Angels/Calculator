@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator_V2\Calculator.csproj", "{5EB1F383-05DF-4AC8-B232-AB4AA47709B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLab", "Calculator_V2\CalculatorLab.csproj", "{5EB1F383-05DF-4AC8-B232-AB4AA47709B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLab.Test.Unit", "CalculatorLab.Test.Unit\CalculatorLab.Test.Unit.csproj", "{1386BAB1-9EB4-4194-905D-04E233E211AE}"
 EndProject
