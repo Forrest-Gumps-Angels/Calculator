@@ -58,11 +58,12 @@ namespace CalculatorLab
             Accumulator = 0;
         }
 
+        private double accumulator_;
         public double Accumulator
         {
-            get { return Accumulator; }
+            get { return accumulator_; }
 
-            private set { Accumulator = value; }
+            private set { accumulator_ = value; }
         }
     }
 }

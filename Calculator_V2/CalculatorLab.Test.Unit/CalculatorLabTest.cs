@@ -94,11 +94,11 @@ namespace CalculatorLab.Test.Unit
             var expected = Assert.Throws<DivisionException>(() => uut.Divide(10.0, 0.0));
         }
 
-        //[Test]
-        //public void Clear_ClearAccumalator_AccumalatorCleared()
-        //{
-        //    uut.Clear();
-        //    Assert.AreEqual(uut.Accumulator, 0);
-        //}
+        [Test]
+        public void Clear_ClearAccumalator_AccumalatorCleared()
+        {
+            uut.Clear();
+            Assert.AreEqual(uut.Accumulator, 0);
+        }
     }
 }
