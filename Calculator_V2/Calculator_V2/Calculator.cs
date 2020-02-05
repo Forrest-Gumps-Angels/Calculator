@@ -51,7 +51,11 @@ namespace CalculatorLab
         public void Test(double methodUT, double expectedResult)
         {
             Console.WriteLine(methodUT == expectedResult ? "Test passed" : "Test failed");
+        }
 
+        public void Clear ()
+        {
+            Accumulator = 0;
         }
 
         public double Accumulator
