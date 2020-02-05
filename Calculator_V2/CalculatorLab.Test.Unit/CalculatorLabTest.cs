@@ -37,62 +37,62 @@ namespace CalculatorLab.Test.Unit
             Assert.That(result, Is.EqualTo((expected)));
         }
 
-        //[Test]
-        //public void Subtract_SubtractTwoDoubles_ReturnCorrectValue()
-        //{
-        //    var result = uut.Subtract(19, 10);
+        [Test]
+        public void Subtract_SubtractTwoDoubles_ReturnCorrectValue()
+        {
+            var result = uut.Subtract(19, 10);
 
-        //    // Classic assert model
-        //    Assert.AreEqual(9, result);
-        //}
+            // Classic assert model
+            Assert.AreEqual(9, result);
+        }
 
-        //[TestCase(5.0, 10.0, -5.0)]
-        //[TestCase(-5.0, -10.0, 5.0)]
-        //[TestCase(5.0, -10.0, 15.0)]
-        //[TestCase(0, 0, 0)]
-        //public void Subtract_SubtractTwoDoubles_ReturnCorrectValueMultipleCases(double a, double b, double expected)
-        //{
-        //    var result = uut.Subtract(a, b);
+        [TestCase(5.0, 10.0, -5.0)]
+        [TestCase(-5.0, -10.0, 5.0)]
+        [TestCase(5.0, -10.0, 15.0)]
+        [TestCase(0, 0, 0)]
+        public void Subtract_SubtractTwoDoubles_ReturnCorrectValueMultipleCases(double a, double b, double expected)
+        {
+            var result = uut.Subtract(a, b);
 
-        //    Assert.That(result, Is.EqualTo((expected)));
-        //}
+            Assert.That(result, Is.EqualTo((expected)));
+        }
 
-        //[TestCase(5.0, 10.0, 50)]
-        //[TestCase(-5.0, -10.0, 50)]
-        //[TestCase(5.0, -10.0, -50)]
-        //[TestCase(0, 0, 0)]
-        //public void Multiply_MultiplyTwoDoubles_ReturnCorrectValue(double a, double b, double expected)
-        //{
-        //    var result = uut.Multiply(a, b);
+        [TestCase(5.0, 10.0, 50)]
+        [TestCase(-5.0, -10.0, 50)]
+        [TestCase(5.0, -10.0, -50)]
+        [TestCase(0, 0, 0)]
+        public void Multiply_MultiplyTwoDoubles_ReturnCorrectValue(double a, double b, double expected)
+        {
+            var result = uut.Multiply(a, b);
 
-        //    Assert.That(result, Is.EqualTo((expected)));
-        //}
+            Assert.That(result, Is.EqualTo((expected)));
+        }
 
-        //[TestCase(2.0, 3.0, 8.0)]
-        //[TestCase(-5.0, -2.0, 0.04)]
-        //[TestCase(3.0, -2.0, 0.11111111111)]
-        //[TestCase(0, 0, 1)]
-        //public void Power_PowerTwoDoubles_ReturnCorrectValue(double a, double b, double expected)
-        //{
-        //    var result = uut.Power(a, b);
+        [TestCase(2.0, 3.0, 8.0)]
+        [TestCase(-5.0, -2.0, 0.04)]
+        [TestCase(3.0, -2.0, 0.11111111111)]
+        [TestCase(0, 0, 1)]
+        public void Power_PowerTwoDoubles_ReturnCorrectValue(double a, double b, double expected)
+        {
+            var result = uut.Power(a, b);
 
-        //    Assert.That(result, Is.EqualTo((expected)).Within(0.001));
-        //}
+            Assert.That(result, Is.EqualTo((expected)).Within(0.001));
+        }
 
-        //[TestCase(2.0, 2.0, 1.0)]
-        //[TestCase(-2.0, -2.0, 1.0)]
-        //[TestCase(-10.0, 5.0, -2.0)]
-        //public void Divide_DivideTwoDoubles_ReturnCorrectValue(double a, double b, double expected)
-        //{
-        //    var result = uut.Divide(a, b);                 //Act
-        //    Assert.That(result, Is.EqualTo(expected)); //Assert
-        //}
+        [TestCase(2.0, 2.0, 1.0)]
+        [TestCase(-2.0, -2.0, 1.0)]
+        [TestCase(-10.0, 5.0, -2.0)]
+        public void Divide_DivideTwoDoubles_ReturnCorrectValue(double a, double b, double expected)
+        {
+            var result = uut.Divide(a, b);                 //Act
+            Assert.That(result, Is.EqualTo(expected)); //Assert
+        }
 
-        //[Test]
-        //public void Divide_DivideByZero_ThrowException()
-        //{
-        //    var expected = Assert.Throws<DivisionException>(() => uut.Divide(10.0, 0.0));
-        //}
+        [Test]
+        public void Divide_DivideByZero_ThrowException()
+        {
+            var expected = Assert.Throws<DivisionException>(() => uut.Divide(10.0, 0.0));
+        }
 
         //[Test]
         //public void Clear_ClearAccumalator_AccumalatorCleared()
