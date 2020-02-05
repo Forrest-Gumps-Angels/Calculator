@@ -54,6 +54,11 @@ namespace CalculatorLab
 
         }
 
+        public void Clear()
+        {
+            Accumulator = 0;
+        }
+
         public double Accumulator;
     }
 }

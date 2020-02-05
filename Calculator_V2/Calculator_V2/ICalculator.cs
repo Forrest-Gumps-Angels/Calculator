@@ -12,6 +12,7 @@ namespace CalculatorLab
         double Subtract(double a, double b);
         double Multiply(double a, double b);
         double Power(double x, double exp);
+        void Clear();
         void Test(double methodUT, double expectedResult);
 
     }
